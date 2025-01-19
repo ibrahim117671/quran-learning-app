@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styl.css">
+</head>
+<body>
+    <h1 style="background-color: chartreuse; text-align: center;">CHAPTER 8</h1>
+    <div class="container">
+        <h1>My First Bootstrap page</h1>
+        <p>this is some text.</p>
+        <div class="container p-5my-5border"></div>
+        <div class="container p-5 my-5 bg-dark text-white"></div>
+        <div class="container p-5 my-5 bg-primary text-white"></div>
+        <br>
+        <div class="row">
+            <div class="col-1 bg-dark text-white">column 1</div>
+            <div class="col-2 bg-primary text-white">column 2</div>
+            <div class="col-3 bg-secondary">column 3</div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-muted">this text is muted.</p>
+        <p class="text-primary">this text is important.</p>
+        <p class="text-success">this text indecates success.</p>
+        <p class="text-info">this text represents some information.</p>
+        <p class="text-warning">this text represents a warning </p>
+        <p class="text-danger">this text  represents danger.</p>
+        <p class="text-secondry">secondary text.</p>
+        <p class="text-dark">Dark grey text.</p>
+        <p class="text-body">Body text.</p>
+        <p class="text-light">Light grey text.</p>
+
+    </div>
+    <div class="container mt-3">
+        <h2>Basic Table</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mohamed</td>
+                    <td>Abdi</td>
+                    <td>mohamed@abdi.com</td>
+                </tr>
+                <tr>
+                    <td>Maryan</td>
+                    <td>Ali</td>
+                    <td>maryan@ali.com</td>
+                </tr>
+                <tr>
+                    <td>Husein</td>
+                    <td>elmi</td>
+                    <td>husein@elmi.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <nav class="navbar navbar-expend-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">logo</a>
+            <button class="navbar-toggle" type="button" data-bg-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar- me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <br>
+
+    <!--Button to open the modal-->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#my modal">
+        open modal
+    </button>
+    <br>
+    <!-- the model-->
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--modal header-->
+                <div class="modal-header">
+                    <h4 class="modal-title">modal heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+                <!--modal body-->
+                <div class="modal-body">modal body..</div>
+                <!--model footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="gradient-bg">
+        <div class="form-container">
+            <h3 class="text-center">Login</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <div class="mb-3text-end">
+                    <a href="#" class="text-secondry">Forget password</a>
+                </div>
+                <button type="submit" class="btn-gradient w-100">submit</button>
+                
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <br>
+    <br>
+    <style>
+        
+body{
+    background: #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.gradient-bg{
+    background: linear-gradient(to bottom right, #6a11cb,#2575fc);
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+.form-container{
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-gradient{
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+}
+.btn-gradient:hover{
+    opacity: 0.9;
+}
+    </style>
+</body>
+</html>

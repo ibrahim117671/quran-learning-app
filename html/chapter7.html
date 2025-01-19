@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+    <link rel="stylesheet" href="../css/styl.css">
+   
+
+</head>
+
+<body style="  width: 300px; margin: 100px auto; padding: 30px;  text-align: center; box-shadow: 5px 5px 10px #222222;">
+    <h1 style="background-color: chartreuse; text-align: center;">CHAPTER 7</h1> 
+    <button onclick="myfunction()">click me</button>
+    <br><br>
+    <div id="myElement">hover over me</div>
+    <br><br>
+    <input type="text" id="textinput" placeholder="type something">
+    <div id="output> </div>
+    <br> <br>
+    <input type="text" id="textinput" placeholder="type something">
+    <div id="output"></div>
+
+    <br> <br>
+
+    
+    <br><br>
+    <div id="myElement1">hover over me</div>
+    <br><br>
+    <input type="text" id="textinput" placeholder="type something">
+    <div id="output> </div>
+    <br> <br>
+    <input type="text" id="textinput" placeholder="type something">
+    <div id="output"></div>
+
+    <br>
+    
+    <form id="myForm">
+        <input type="text" id="textinput" placeholder="type something">
+        <button type="submit">submit</button>
+    </form>
+    <br>
+    <h1>input validation examples</h1>
+    <form onsubmit="return validateinput();">
+        <input type="text" id="user input" placeholder="type something..."/>
+        <button type="submit">submit</button>
+    </form>
+
+    <br>
+    <ul id="parentList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+         
+        </ul>
+
+
+      <script src="../main1.js/main.js"></script>
+      
+
+      <script>
+        /*chapter7*/
+const element=document.getElementById("myButton");
+element.addEventListener("click",myfunction);
+function myfunction(){
+    alert("Button clicked!");
+}
+
+
+function myfunction(){
+    alert("Button clicked!");
+}
+
+const textinput =document.getElementById("textinput");
+const output =document.getElementById("output");
+
+textinput.addEventListener("keydown",function(event){
+    outputDiv.innerText =`keydown $P{event.key}`;
+
+});
+
+textinput.addEventListener("keypress",function(event){
+    outputDiv.innerText +=`\nkeypress: ${event.key}`;
+});
+
+textinput.addEventListener("keyup",function(event){
+    outputDiv.innerText +='\keyup: ${event.key}';
+});
+
+
+
+consttextinput =document.getElementById("textinput");
+const outputDiv =document.getElementById("output");
+textinput.addEventListener("focus",function(){
+    updateoutput("Element focused","focused");
+});
+
+textinput.addEventListener("blur",function(){
+    updateouput("Element blurred","blurred");
+});
+
+function updateoutput(message, className){
+    outputDiv.innerText=message;
+    outputDiv.className=className;
+    
+}
+
+
+//select parent//
+    const parentList = document.getElementById("parentList");
+    parentList.addEventListener("click", function(event) {
+      if (event.target.tagName === "LI") {
+        alert("Clicked on: " + event.target.innerText);
+      }
+
+  });
+      </script>
+    
+</body>
+</html>

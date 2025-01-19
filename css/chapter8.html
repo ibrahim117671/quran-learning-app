@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    <div class="container">
+        <h1>my First Bootstrap page</h1>
+        <p>this is some text.</p>
+        <div class="container p-5my-5border"></div>
+        <div class="container p-5 my-5 bg-dark text-white"></div>
+        <div class="container p-5 my-5 bg-primary text-white"></div>
+        <br>
+        <div class="row">
+            <div class="col-1 bg-dark text-white">column 1</div>
+            <div class="col-2 bg-primary text-white">column 2</div>
+            <div class="col-3 bg-secondary">column 3</div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-muted">this text is muted.</p>
+        <p class="text-primary">this text is important.</p>
+        <p class="text-success">this text indecates success.</p>
+        <p class="text-info">this text represents some information.</p>
+        <p class="text-warning">this text represents a warning </p>
+        <p class="text-danger">this text  represents danger.</p>
+        <p class="text-secondry">secondary text.</p>
+        <p class="text-dark">Dark grey text.</p>
+        <p class="text-body">Body text.</p>
+        <p class="text-light">Light grey text.</p>
+
+    </div>
+    <div class="container mt-3">
+        <h2>Basic Table</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mohamed</td>
+                    <td>Abdi</td>
+                    <td>mohamed@abdi.com</td>
+                </tr>
+                <tr>
+                    <td>Maryan</td>
+                    <td>Ali</td>
+                    <td>maryan@ali.com</td>
+                </tr>
+                <tr>
+                    <td>Husein</td>
+                    <td>elmi</td>
+                    <td>husein@elmi.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <nav class="navbar navbar-expend-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">logo</a>
+            <button class="navbar-toggle" type="button" data-bg-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar- me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <br>
+
+    <!--Button to open the modal-->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#my modal">
+        open modal
+    </button>
+    <br>
+    <!-- the model-->
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">model heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!--model body-->
+                <div class="moddal-body">modal body</div>
+                <!--model footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
